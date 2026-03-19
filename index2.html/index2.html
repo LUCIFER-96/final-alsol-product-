@@ -26,7 +26,7 @@ header {
   position: sticky;
   top: 0;
   background: white;
-  border-bottom: 1px solid #eee;
+  border-bottom: 3px solid #eee;
   z-index: 1000;
 }
 
@@ -165,12 +165,26 @@ header {
   text-align: center;
   margin-bottom: 40px;
 }
-
-.review-container {
-  max-width: 900px;
+.reviewss {
+  max-width: 1100px;
   margin: auto;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
-
+.review-card {
+ flex: 1;
+  min-width: 220px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.3s;
+}
+.review-card:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
 .review {
   border-bottom: 1px solid #eee;
   padding: 20px 0;
@@ -269,22 +283,25 @@ footer p {
 
 <section class="reviews">
   <h2>Customer Reviews</h2>
-
-  <div class="review-container">
+<div class="reviewss">
+  <div class="review-card">
     <div class="review">
       <strong>Rahul</strong>
       <p>Great product! Battery life is amazing.</p>
     </div>
-
+</div>
+<div class="review-card">
     <div class="review">
       <strong>Anita</strong>
       <p>Stylish and very useful for fitness tracking.</p>
     </div>
-
+</div>
+<div class="review-card">
     <div class="review">
       <strong>Vikram</strong>
       <p>Worth every rupee. Highly recommend!</p>
     </div>
+  </div>
   </div>
 </section>
 <footer id="buy">

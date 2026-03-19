@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Watch Pro Ultra</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: #111;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: white;
+  border-bottom: 3px solid #eee;
+  z-index: 1000;
+}
+
+.nav {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #111;
+  margin-left: 20px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  opacity: 0.6;
+}
+
+.hero {
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 20px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.desc {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.quantity input {
+  width: 60px;
+  padding: 8px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.btn {
+  padding: 12px 25px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+  .btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.features {
+  padding: 80px 20px;
+  background: #fafafa;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cards {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 220px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.reviews {
+  padding: 80px 20px;
+}
+
+.reviews h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.review-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.review {
+  border-bottom: 1px solid #eee;
+  padding: 20px 0;
+}
+
+.review p {
+  color: #555;
+}
+
+footer {
+  background: #111;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+footer p {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <h1>Watches&Co.</h1>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="checkout.html">Buy Now</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <img src="smartwatch-hero.png" alt="Smart Watch">
+
+  <div class="hero-content">
+    <h2>SmartWatch Pro</h2>
+    <div class="price"><p>
+  <del>₹1999</del>
+  <span class="sale-price">Now only ₹999!</span>
+</p></div>
+    <p class="desc">Track your fitness, monitor health, and stay connected — all from your wrist.</p>
+
+    <div class="quantity">
+      Quantity:
+      <input type="number" value="1" min="1">
+    </div>
+
+    <button class="btn">Add to Cart</button>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <h2>Features</h2>
+
+  <div class="cards">
+    <div class="card">
+    <img src="heartrate.png" alt="heart rate">
+      <h3>Heart Rate</h3>
+      <p>Monitor your heart rate in real-time.</p>
+    </div>
+
+    <div class="card">
+    <img src="pin.jpg" alt="GPS Tracking"width="225" height="225">
+      <h3>GPS Tracking</h3>
+      <p>Track runs, walks, and workouts easily.</p>
+    </div>
+
+    <div class="card">
+        <img src="water.png" alt="Water Resistant"width="225" height="225">
+      <h3>Water Resistant</h3>
+      <p>Safe for swimming and rain.</p>
+    </div>
+
+    <div class="card">
+        <img src="battery-removebg-preview.png" alt="Long Battery"width="225" height="225">
+      <h3>Long Battery</h3>
+      <p>Up to 7 days of battery life.</p>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <h2>Customer Reviews</h2>
+
+  <div class="review-container">
+    <div class="review">
+      <strong>Rahul</strong>
+      <p>Great product! Battery life is amazing.</p>
+    </div>
+
+    <div class="review">
+      <strong>Anita</strong>
+      <p>Stylish and very useful for fitness tracking.</p>
+    </div>
+
+    <div class="review">
+      <strong>Vikram</strong>
+      <p>Worth every rupee. Highly recommend!</p>
+    </div>
+  </div>
+</section>
+<footer id="buy">
+  <div><h2>SmartWatch Pro</h2>
+  <p>© 2026 SmartWatch. All rights reserved.</p>
+   <div>
+      <a href="#home" style="text-decoration: none;"font color: #fff;>Careers</a>
+      <a href="#features" style="text-decoration: none;"font color: #fff;>Contact</a>
+      <a href="checkout.html" style="text-decoration: none; ;"font color: #fff;>Buy Now</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
